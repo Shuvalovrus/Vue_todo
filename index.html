@@ -8,7 +8,7 @@
 <body>
     <div id="app">
         <h1 class="title">Todo list on Vue.js</h1>
-        <input v-model="inputValue" class="input" type="text" />
+        <input @keypress.enter="addItem" v-model="inputValue" class="input" type="text" />
         <button @click="addItem" class="btn">Добавить запись</button>
         <hr/>
         <ul v-if="itemList.length > 0" class="list">
