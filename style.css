@@ -41,7 +41,7 @@ body {
     margin-bottom: 15px;
     padding: 10px 15px;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 15px;
     color: #fff;
     background-color: chocolate;
     transition: .3s all ease 0s;
@@ -49,6 +49,17 @@ body {
 
 .btn:hover {
     background-color: #e57a30;
+}
+
+.btn_del {
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #f75634;
+}
+
+.btn_del:hover {
+    background-color: #e56148;
 }
 
 .list {
