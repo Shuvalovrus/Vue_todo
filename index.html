@@ -8,8 +8,14 @@
 <body>
     <div id="app">
         <h1 class="title">Todo list on Vue.js</h1>
-        <input class="input" type="text">
-        <button class="btn">Добавить</button>
+        <input v-model="inputValue" class="input" type="text" />
+        <button @click="addItem" class="btn">Добавить запись</button>
+        <hr/>
+        <ul class="list">
+            <li class="list-item" v-for="(item, index) in itemList"> {{ index + 1 }}: {{ item }} </li>
+        </ul>
     </div>
 </body>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="script.js"></script>
 </html>
