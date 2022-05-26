@@ -11,9 +11,10 @@
         <input v-model="inputValue" class="input" type="text" />
         <button @click="addItem" class="btn">Добавить запись</button>
         <hr/>
-        <ul class="list">
+        <ul v-if="itemList.length > 0" class="list">
             <li class="list-item" v-for="(item, index) in itemList"> {{ index + 1 }}: {{ item }} </li>
         </ul>
+        <p v-else>Добавьте первую заметку</p>
     </div>
 </body>
 <script src="https://unpkg.com/vue@next"></script>
