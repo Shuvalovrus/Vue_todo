@@ -48,6 +48,7 @@ body {
 }
 
 .btn:hover {
+    cursor: pointer;
     background-color: #e57a30;
 }
 
