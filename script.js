@@ -12,6 +12,9 @@ const App = {
                 this.itemList.push(this.inputValue)
                 this.inputValue = ''
             }
+        },
+        delItem(key) {
+            this.itemList.splice(key, 1);
         }
     }
 }

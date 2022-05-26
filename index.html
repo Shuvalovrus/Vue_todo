@@ -12,9 +12,9 @@
         <button @click="addItem" class="btn">Добавить запись</button>
         <hr/>
         <ul v-if="itemList.length > 0" class="list">
-            <li class="list-item" v-for="(item, index) in itemList">
+            <li class="list-item" :key="index" v-for="(item, index) in itemList">
                 {{ index + 1 }}: {{ item }}
-                <button class="btn btn_del">Удалить</button>
+                <button class="btn btn_del" @click="delItem">Удалить</button>
             </li>
         </ul>
         <p v-else>Добавьте первую заметку</p>
