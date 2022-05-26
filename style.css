@@ -5,6 +5,10 @@
     outline: none;
 }
 
+hr {
+    margin-bottom: 10px;
+}
+
 body {
     padding: 50px;
     background-color: darkslategray;
@@ -33,6 +37,7 @@ body {
 
 .btn {
     border: none;
+    margin-bottom: 15px;
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 10px;
@@ -43,4 +48,13 @@ body {
 
 .btn:hover {
     background-color: #e57a30;
+}
+
+.list {
+    list-style: none;
+}
+
+.list-item {
+    font-size: 20px;
+    margin-bottom: 15px;
 }
