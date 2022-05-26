@@ -8,7 +8,10 @@ const App = {
     },
     methods: {
         addItem() {
-            this.itemList.push(this.inputValue)
+            if (this.inputValue !== '') {
+                this.itemList.push(this.inputValue)
+                this.inputValue = ''
+            }
         }
     }
 }
