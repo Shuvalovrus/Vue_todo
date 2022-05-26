@@ -67,6 +67,8 @@ body {
 }
 
 .list-item {
+    display: flex;
+    justify-content: space-between;
     font-size: 20px;
     margin-bottom: 15px;
 }
